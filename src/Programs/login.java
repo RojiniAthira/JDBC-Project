@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class login extends loginpage {
 	
-	public static void loginuser() {
+	public void loginuser() {
 		
 		System.out.println("--------------------------------------------------------------------------Login"
 				+ "------------------------------------------------------------");
@@ -19,6 +19,7 @@ public class login extends loginpage {
 			pst.setString(1, user);
             pst.setString(2, encryption.encrypt(password));
             ResultSet rs = pst.executeQuery();
+            System.out.println();
 			if (rs.next()) {
 				System.out.println("Login successful!");
 			} else {
