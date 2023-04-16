@@ -10,17 +10,17 @@ public class register extends loginpage {
 				+ "------------------------------------------------------------");
 		System.out.println("# Enter your informations correctly.");
 		System.out.println("# Username should be of following format:");
-		System.out.println("		1.Should contain maximum size 0f 8 characters and "
-				+ "minimum of 20 characters.");
+		System.out.println("		1.Should contain maximum size of 10 characters and "
+				+ "minimum of 8 characters.");
 		System.out.println("		2.Can contain lower case characters and digits.");
 		System.out.println("		3.Should not contain upper case characters.");
-		System.out.println("		Format : LLL123");
+		System.out.println("		Format : aaa223");
 		System.out.println("# Password should be of following format:");
-		System.out.println("		1.Should contain maximum size 0f 8 characters and "
-				+ "minimum of 14 characters.");
+		System.out.println("		1.Should contain maximum size 0f 14 characters and "
+				+ "minimum of 8 characters.");
 		System.out.println("		2.Can contain lower case&upper case characters,special characters and digits.");
 		System.out.println("		3.Should start with upper case characters and end with digits.");
-		System.out.println("		Format : UULL@@123");
+		System.out.println("		Format : AAaa@@123");
 		System.out.println("---------------------------------------------------------------------------"
 				+ "------------------------------------------------------------");
 		String[] info = information.getInformation();

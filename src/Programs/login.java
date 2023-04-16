@@ -1,5 +1,6 @@
 package Programs;
 
+//import java.io.Console;
 import java.sql.ResultSet;
 import java.util.Scanner;
 
@@ -10,12 +11,15 @@ public class login extends loginpage {
 		System.out.println("--------------------------------------------------------------------------Login"
 				+ "------------------------------------------------------------");
 		Scanner in = new Scanner(System.in);
+//		Console console = System.console();
 		try {
 			pst = con.prepareStatement("SELECT * FROM password WHERE username = ? AND password_encrypted = ?");
 			System.out.print("Enter Username:");
 			String user = in.nextLine();
-			System.out.print("Enter Your Password:");
+			System.out.print("Enter Password:");
 			String password = in.nextLine();
+//			char[] passwordArray = console.readPassword("Enter your password: ");
+//	        String password = new String(passwordArray);
 			pst.setString(1, user);
             pst.setString(2, encryption.encrypt(password));
             ResultSet rs = pst.executeQuery();

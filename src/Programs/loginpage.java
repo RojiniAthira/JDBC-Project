@@ -17,8 +17,9 @@ public class loginpage {
 	public static void main(String[] args) throws SQLException {
 
 		Scanner in = new Scanner(System.in);
-
+		
 		try {
+			//Class.forName("com.mysql.jdbc.Driver");
 			con = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
 
 			while (true) {
